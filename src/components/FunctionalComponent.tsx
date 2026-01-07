@@ -1,18 +1,8 @@
-import { View, Text, Alert } from 'react-native';
+import { Text } from 'react-native';
 import React from 'react';
-import MyButton from './MyButton';
 
 const FunctionalComponent = () => {
-  return (
-    <View>
-      <MyButton
-        onPress={() => {
-          Alert.alert('Hello');
-        }}
-        title="onClick"
-      />
-    </View>
-  );
+  return <Text>Functional Component</Text>;
 };
 
 export default FunctionalComponent;
