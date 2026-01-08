@@ -1,9 +1,8 @@
-import "./global.css"
-import { Text, View } from "react-native";
-import MainNavigator from "./src/navigation/MainNavigator";
- 
+import "./global.css";
+import DrawerNavigator from './src/navigation/DrawerNavigator'
+
 export default function App() {
   return (
-   <MainNavigator/>
+   <DrawerNavigator/>
   );
 }
