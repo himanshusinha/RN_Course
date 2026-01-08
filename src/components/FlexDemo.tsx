@@ -1,12 +1,17 @@
 import { Text, View } from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
  
+const data = ['small text','medium text length','short text','very very long text']
 const FlexDemo = () => {
   return (
-    <SafeAreaView style={{flex:1}}>
-      <View style={{width:100,height:100,backgroundColor:'orange',alignSelf:'flex-end'}}></View>
-    </SafeAreaView>
+        <View style={{flexWrap:'wrap',flexDirection:'row'}}>
+            {data.map((item)=>{
+            return(
+            <View key={item} style={{backgroundColor:'orange',padding:10,margin:10}}>
+                <Text>{item}</Text>
+            </View>)
+        })}
+        </View>
   )
 }
 
@@ -20,4 +25,4 @@ export default FlexDemo
 // alignItems : "strech" column me chahiye to width set karna padti hai height nahi
 // alignItems : "baseline" text ka baseline align karta hai.
 //alignSelf -- component khud ko align karta hai 
-//flexWrap. -- child align
+//flexWrap. -- child align // lagta parent per hai 

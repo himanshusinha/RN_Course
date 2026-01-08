@@ -10,7 +10,7 @@
     "**/*.tsx",
     "src/screens/HomeScreen.jsx",
     "nativewind-env.d.ts"
-  ],
+, "src/navigation/MainNavigator.jsx"  ],
   "exclude": [
     "**/node_modules",
     "**/Pods"
