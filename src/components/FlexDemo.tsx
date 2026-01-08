@@ -1,31 +1,12 @@
 import { Text, View } from 'react-native'
 import React from 'react'
-
+import { SafeAreaView } from 'react-native-safe-area-context'
+ 
 const FlexDemo = () => {
   return (
-    <View
-      style={{
-        alignItems: 'baseline',
-        backgroundColor: 'white',
-        padding: 20,
-      }}
-    >
-      <View style={{ backgroundColor: 'green' }}>
-        <Text style={{ fontSize: 16 }}>Hello</Text>
-      </View>
-
-      <View style={{ backgroundColor: 'orange' }}>
-        <Text style={{ fontSize: 28 }}>Helloasdasd</Text>
-      </View>
-
-      <View style={{ backgroundColor: 'yellow' }}>
-        <Text style={{ fontSize: 40 }}>Helloasdasd</Text>
-      </View>
-
-      <View style={{ backgroundColor: 'blue' }}>
-        <Text style={{ fontSize: 20 }}>Helloasdasdasdasd</Text>
-      </View>
-    </View>
+    <SafeAreaView style={{flex:1}}>
+      <View style={{width:100,height:100,backgroundColor:'orange',alignSelf:'flex-end'}}></View>
+    </SafeAreaView>
   )
 }
 
