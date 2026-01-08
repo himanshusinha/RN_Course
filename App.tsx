@@ -1,8 +1,11 @@
+import { NavigationContainer } from "@react-navigation/native";
 import "./global.css";
-import DrawerNavigator from './src/navigation/DrawerNavigator'
+import BottomTabNavigator from './src/navigation/BottomTabNavigator'
 
 export default function App() {
   return (
-   <DrawerNavigator/>
+    <NavigationContainer>
+       <BottomTabNavigator/>
+    </NavigationContainer>
   );
 }
