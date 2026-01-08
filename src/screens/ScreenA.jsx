@@ -17,7 +17,7 @@ const ScreenA = () => {
           navigation.navigate('ScreenB', {
             name: 'Himanshu Sinha',
             email: 'himanshusinha011@gmail.com',
-            onGoBack: onDataBack,   // 👈 callback
+            onGoBack: onDataBack, 
           })
         }
       />

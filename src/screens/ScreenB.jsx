@@ -12,7 +12,6 @@ const ScreenB = () => {
     <View style={{ flex:1, justifyContent:'center', alignItems:'center' }}>
       <Text>{name}</Text>
       <Text>{email}</Text>
-
       <Button
         title="Go Back"
         onPress={() => {
@@ -25,6 +24,7 @@ const ScreenB = () => {
           navigation.goBack()
         }}
       />
+      <Button title='Go To Screen C' onPress={()=>navigation.navigate("ScreenC")}/>
     </View>
   )
 }
