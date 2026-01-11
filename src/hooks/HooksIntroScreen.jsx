@@ -64,3 +64,5 @@ const styles = StyleSheet.create({
   },
 });
 export default HooksIntroScreen
+
+// state side effects 
