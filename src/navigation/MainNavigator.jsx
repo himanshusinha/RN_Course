@@ -1,5 +1,4 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import HomeScreen from '../screens/HomeScreen';
 import ScreenA from '../screens/ScreenA'
@@ -8,11 +7,21 @@ import ScreenC from '../screens/ScreenC'
 import HooksIntroScreen from '../hooks/HooksIntroScreen'
 import UseStateHookDemo from '../hooks/UseStateHookDemo'
 import UseRefHookDemo from '../hooks/UseRefHookDemo'
+import UseContextHookDemo from '../hooks/UseContextHookDemo'
+import UseEffectHookDemo from '../hooks/UseEffectHookDemo'
+import UserDetails from '../demo/UserDetails'
+import TimersDemo from '../demo/TimersDemo'
+import ListenerDemo from '../demo/ListenerDemo'
 
 const MainNavigator  = () => {
   const Stack = createStackNavigator();
   return (
        <Stack.Navigator screenOptions={{headerShown:false}}>
+        <Stack.Screen name="ListenerDemo" component={ListenerDemo} />
+        <Stack.Screen name="TimersDemo" component={TimersDemo} />
+        <Stack.Screen name="UserDetails" component={UserDetails} />
+        <Stack.Screen name="UseEffectHook" component={UseEffectHookDemo} />
+        <Stack.Screen name="UseContextHook" component={UseContextHookDemo} />
         <Stack.Screen name="UseRefHook" component={UseRefHookDemo} />
         <Stack.Screen name="UseStateHook" component={UseStateHookDemo} />
         <Stack.Screen name="HooksIntro" component={HooksIntroScreen} />
