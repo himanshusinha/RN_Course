@@ -16,11 +16,13 @@ import UseCallBackHookDemo from '../hooks/UseCallBackHookDemo';
 import UseCallBackHook2Demo from '../hooks/UseCallBackHook2Demo';
 import UseMemoHookDemo from '../hooks/UseMemoHookDemo'
 import UseMemoHookWithoutDemo from '../hooks/UseMemoHookWithoutDemo';
+import UseReducerHookDemo from '../hooks/UseReducerHookDemo';
 
 const MainNavigator  = () => {
   const Stack = createStackNavigator();
   return (
        <Stack.Navigator screenOptions={{headerShown:false}}>
+        <Stack.Screen name="UseReducerHookDemo" component={UseReducerHookDemo} />
         <Stack.Screen name="UseMemoHookDemo" component={UseMemoHookDemo} />
         <Stack.Screen name="UseMemoHookWithoutDemo" component={UseMemoHookWithoutDemo} />
         <Stack.Screen name="UseCallBackHook2Demo" component={UseCallBackHook2Demo} />

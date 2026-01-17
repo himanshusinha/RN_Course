@@ -1,8 +1,8 @@
 import React from 'react';
-import UseMemoHookDemo from '../hooks/UseMemoHookDemo';
+import UseReducerHookDemo from '../hooks/UseReducerHookDemo';
  const HomeScreen = () => {
   return (
-    <UseMemoHookDemo/>
+    <UseReducerHookDemo/>
   );
 };
 
