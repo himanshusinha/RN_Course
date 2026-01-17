@@ -1,8 +1,8 @@
 import React from 'react';
-import FlexDemo from '../components/FlexDemo';
-const HomeScreen = () => {
+import UseMemoHookDemo from '../hooks/UseMemoHookDemo';
+ const HomeScreen = () => {
   return (
-    <FlexDemo/>
+    <UseMemoHookDemo/>
   );
 };
 

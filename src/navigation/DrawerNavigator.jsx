@@ -7,12 +7,10 @@ const Drawer = createDrawerNavigator();
 
 const MyDrawer=()=> {
   return (
-    <NavigationContainer>
-    <Drawer.Navigator drawerContent={(props) => <CustomDrawerContent {...props} />}>
+   <Drawer.Navigator drawerContent={(props) => <CustomDrawerContent {...props} />}>
       <Drawer.Screen name="Search" component={SearchScreen} />
       <Drawer.Screen name="Profile" component={ProfileScreen} />
     </Drawer.Navigator>
-    </NavigationContainer>
-  );
+   );
 }
 export default MyDrawer

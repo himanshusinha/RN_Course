@@ -12,11 +12,19 @@ import UseEffectHookDemo from '../hooks/UseEffectHookDemo'
 import UserDetails from '../demo/UserDetails'
 import TimersDemo from '../demo/TimersDemo'
 import ListenerDemo from '../demo/ListenerDemo'
+import UseCallBackHookDemo from '../hooks/UseCallBackHookDemo';
+import UseCallBackHook2Demo from '../hooks/UseCallBackHook2Demo';
+import UseMemoHookDemo from '../hooks/UseMemoHookDemo'
+import UseMemoHookWithoutDemo from '../hooks/UseMemoHookWithoutDemo';
 
 const MainNavigator  = () => {
   const Stack = createStackNavigator();
   return (
        <Stack.Navigator screenOptions={{headerShown:false}}>
+        <Stack.Screen name="UseMemoHookDemo" component={UseMemoHookDemo} />
+        <Stack.Screen name="UseMemoHookWithoutDemo" component={UseMemoHookWithoutDemo} />
+        <Stack.Screen name="UseCallBackHook2Demo" component={UseCallBackHook2Demo} />
+        <Stack.Screen name="UseCallBackHookDemo" component={UseCallBackHookDemo} />
         <Stack.Screen name="ListenerDemo" component={ListenerDemo} />
         <Stack.Screen name="TimersDemo" component={TimersDemo} />
         <Stack.Screen name="UserDetails" component={UserDetails} />
